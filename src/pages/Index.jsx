@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import TechStack from '@/components/TechStack';
-import { Code, ArrowRight, Globe, Settings, Rocket, Download } from 'lucide-react';
+import { Code, ArrowRight, Globe, Settings, Rocket } from 'lucide-react';
 import { Card, CardDescription, CardContent } from '@/components/ui/card';
 
 const Index = () => {
@@ -34,11 +34,6 @@ const Index = () => {
                 <Link to="/portfolio">
                   View My Work <ArrowRight size={16} className="ml-2" />
                 </Link>
-              </Button>
-              <Button asChild variant="secondary" size="lg">
-                <a href="/resume.pdf" download="CodeCraft_Resume.pdf">
-                  Download Resume <Download size={16} className="ml-2" />
-                </a>
               </Button>
             </div>
           </div>
