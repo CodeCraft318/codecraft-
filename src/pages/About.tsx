@@ -99,7 +99,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold mb-4">Education & Experience</h3>
                 <div className="space-y-4">
                   <div className="border-l-2 border-primary pl-4 py-1">
-                    <div className="text-sm text-muted-foreground">2018 - Present</div>
+                    <div className="text-sm text-muted-foreground">2020 - Present</div>
                     <div className="font-medium">Freelance Developer</div>
                     <div className="text-sm">Building web and mobile applications for clients worldwide</div>
                   </div>
@@ -110,7 +110,7 @@ const About = () => {
                   </div>
                   <div className="border-l-2 border-primary pl-4 py-1">
                     <div className="text-sm text-muted-foreground">2014 - 2016</div>
-                    <div className="font-medium">BSc in Computer Science</div>
+                    <div className="font-medium">BE in Computer Science</div>
                     <div className="text-sm">University of Technology</div>
                   </div>
                 </div>
