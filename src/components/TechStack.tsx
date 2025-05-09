@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 
 interface TechItemProps {
@@ -8,8 +7,7 @@ interface TechItemProps {
 
 const TechStack: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  
-  // List of technologies
+
   const technologies: TechItemProps[] = [
     { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
     { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
@@ -17,21 +15,21 @@ const TechStack: React.FC = () => {
     { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
     { name: "Kotlin", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" },
     { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
-    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-    { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
-    { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+    {
+      name: "Tailwind CSS",
+      icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+    }
+
+    ,
     { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-    { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-    { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
   ];
-  
-  // Duplicate the array for infinite scroll effect
+
   const allTechnologies = [...technologies, ...technologies];
-  
+
   useEffect(() => {
     const scrollElement = scrollRef.current;
     if (!scrollElement) return;
-    
+
     const animate = () => {
       if (scrollElement.scrollLeft >= scrollElement.scrollWidth / 2) {
         scrollElement.scrollLeft = 0;
@@ -40,12 +38,11 @@ const TechStack: React.FC = () => {
       }
       requestAnimationFrame(animate);
     };
-    
+
     const animation = requestAnimationFrame(animate);
-    
     return () => cancelAnimationFrame(animation);
   }, []);
-  
+
   return (
     <div className="w-full overflow-hidden py-12 bg-card">
       <div className="container-custom mb-6">
@@ -53,7 +50,7 @@ const TechStack: React.FC = () => {
           Tech Stack & Tools
         </h2>
       </div>
-      <div 
+      <div
         ref={scrollRef}
         className="flex overflow-x-hidden whitespace-nowrap custom-scrollbar"
       >
@@ -61,9 +58,9 @@ const TechStack: React.FC = () => {
           {allTechnologies.map((tech, index) => (
             <div key={index} className="flex flex-col items-center justify-center gap-3">
               <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
-                <img 
-                  src={tech.icon} 
-                  alt={tech.name} 
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
                   className="max-w-full max-h-full object-contain"
                 />
               </div>

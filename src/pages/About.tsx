@@ -13,7 +13,7 @@ const About = () => {
     { name: "UI/UX Design", level: 75 },
     { name: "DevOps", level: 70 },
   ];
-  
+
   // Tools data
   const tools = [
     { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
@@ -25,7 +25,7 @@ const About = () => {
     { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
     { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
   ];
-  
+
   return (
     <div className="min-h-screen pt-20">
       {/* About Section */}
@@ -47,15 +47,16 @@ const About = () => {
               </h1>
               <div className="space-y-4">
                 <p className="text-lg">
-                  Hi, I'm <span className="font-semibold">David Chen</span>, a passionate freelance developer with over 5 years of experience building web and mobile applications.
+                  We are <span className="font-semibold">CodeCraft</span>, a dedicated team of developers specializing in building high-quality mobile applications, robust backend systems, and modern web solutions.
                 </p>
                 <p>
-                  I specialize in creating modern, responsive, and user-friendly applications using the latest technologies. My approach combines technical expertise with a deep understanding of user experience design.
+                  Our expertise lies in delivering scalable, user-centric applications using the latest technologies and industry best practices. We combine strong technical skills with thoughtful design to create seamless digital experiences.
                 </p>
                 <p>
-                  When I'm not coding, I enjoy hiking, reading tech blogs, and contributing to open-source projects. I believe in continuous learning and staying updated with the latest trends in technology.
+                  At CodeCraft, we are passionate about innovation, collaboration, and continuous improvement. We stay ahead of the curve to ensure the solutions we build are both future-ready and impactful.
                 </p>
               </div>
+
               <div className="flex flex-wrap gap-3 pt-4">
                 <Button asChild>
                   <Link to="/contact">Get In Touch</Link>
@@ -71,7 +72,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Skills Section */}
       <section className="section-padding bg-card">
         <div className="container-custom">
@@ -118,20 +119,20 @@ const About = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Tools Section */}
       <section className="section-padding">
         <div className="container-custom">
           <h2 className="text-3xl font-bold mb-10 text-center">Tools & Technologies</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             {tools.map((tool, index) => (
-              <div 
+              <div
                 key={index}
                 className="flex flex-col items-center p-4 rounded-lg hover:bg-card transition-colors"
               >
                 <div className="w-16 h-16 mb-3 flex items-center justify-center">
-                  <img 
-                    src={tool.icon} 
+                  <img
+                    src={tool.icon}
                     alt={tool.name}
                     className="max-w-full max-h-full"
                   />
@@ -142,7 +143,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Approach Section */}
       <section className="section-padding bg-card">
         <div className="container-custom">

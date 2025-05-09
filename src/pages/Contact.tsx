@@ -16,7 +16,7 @@ const Contact = () => {
           </p>
         </div>
       </section>
-      
+
       {/* Contact Content */}
       <section className="section-padding">
         <div className="container-custom">
@@ -25,7 +25,7 @@ const Contact = () => {
               <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
               <ContactForm />
             </div>
-            
+
             <div>
               <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
               <div className="space-y-6">
@@ -35,9 +35,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium mb-1">Email</h3>
-                    <p className="text-muted-foreground">hello@devportfolio.com</p>
-                    <Button 
-                      variant="link" 
+                    <p className="text-muted-foreground">codecraft318@gmail.com</p>
+                    <Button
+                      variant="link"
                       className="p-0 h-auto mt-1 text-primary"
                       asChild
                     >
@@ -47,16 +47,16 @@ const Contact = () => {
                     </Button>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4 p-4 rounded-lg bg-card">
                   <div className="bg-primary/10 p-3 rounded-md">
                     <Phone className="text-primary" />
                   </div>
                   <div>
                     <h3 className="font-medium mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                    <Button 
-                      variant="link" 
+                    <p className="text-muted-foreground">+91 8424955003</p>
+                    <Button
+                      variant="link"
                       className="p-0 h-auto mt-1 text-primary"
                       asChild
                     >
@@ -66,21 +66,21 @@ const Contact = () => {
                     </Button>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4 p-4 rounded-lg bg-card">
                   <div className="bg-primary/10 p-3 rounded-md">
                     <MapPin className="text-primary" />
                   </div>
                   <div>
                     <h3 className="font-medium mb-1">Location</h3>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">Mumbai, Kalyan(East)</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Available for remote work worldwide
                     </p>
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-8">
                 <h3 className="text-lg font-medium mb-4">Business Hours</h3>
                 <div className="space-y-2">
@@ -102,7 +102,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Map Section */}
       <section className="h-64 md:h-96">
         <iframe
