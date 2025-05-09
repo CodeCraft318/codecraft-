@@ -21,7 +21,7 @@ const Index = () => {
               <span className="text-gradient">solve real problems</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg">
-              Freelance software and web developer specializing in creating beautiful, 
+              Freelance software and web developer specializing in creating beautiful,
               functional applications that drive business growth and enhance user experience.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
@@ -39,8 +39,8 @@ const Index = () => {
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
+              <img
+                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 alt="Developer"
                 className="w-full h-full object-cover"
               />
@@ -48,10 +48,10 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Tech Stack Section */}
       <TechStack />
-      
+
       {/* Services Preview Section */}
       <section className="section-padding">
         <div className="container-custom">
@@ -61,7 +61,7 @@ const Index = () => {
               I provide end-to-end development services to help businesses thrive in the digital world.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-in">
             <Card className="card-hover">
               <CardContent className="pt-6">
@@ -74,7 +74,7 @@ const Index = () => {
                 </CardDescription>
               </CardContent>
             </Card>
-            
+
             <Card className="card-hover">
               <CardContent className="pt-6">
                 <div className="mb-4 p-3 rounded-lg bg-primary/10 w-fit">
@@ -86,7 +86,7 @@ const Index = () => {
                 </CardDescription>
               </CardContent>
             </Card>
-            
+
             <Card className="card-hover">
               <CardContent className="pt-6">
                 <div className="mb-4 p-3 rounded-lg bg-primary/10 w-fit">
@@ -99,7 +99,7 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
-          
+
           <div className="text-center mt-10">
             <Button asChild variant="outline">
               <Link to="/services">
@@ -109,7 +109,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="bg-primary text-primary-foreground py-16">
         <div className="container-custom text-center">
@@ -119,7 +119,7 @@ const Index = () => {
           </p>
           <Button asChild variant="secondary" size="lg">
             <Link to="/contact">
-              Let's Work Together
+              Let s Work Together
             </Link>
           </Button>
         </div>
