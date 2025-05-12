@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import TechStack from '@/components/TechStack';
 import { Code, ArrowRight, Globe, Settings, Rocket } from 'lucide-react';
 import { Card, CardDescription, CardContent } from '@/components/ui/card';
+import profileImg from '../assets/image/homeImg.jpg'; // adjust path based on your file
 
 const Index = () => {
   return (
@@ -40,12 +41,13 @@ const Index = () => {
           <div className="flex-1 flex justify-center md:justify-end">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                src={profileImg}
                 alt="Developer"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500 ease-in-out"
               />
             </div>
           </div>
+
         </div>
       </section>
 
