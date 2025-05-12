@@ -73,77 +73,89 @@ const About = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="section-padding bg-card">
-        <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-10 text-center">My Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              {skills.map((skill, index) => (
-                <div key={index}>
-                  <div className="flex justify-between mb-2">
-                    <span className="font-medium">{skill.name}</span>
-                    <span>{skill.level}%</span>
-                  </div>
-                  <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-primary"
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div>
-              <div className="bg-card rounded-lg p-6 shadow">
-                <h3 className="text-xl font-semibold mb-4">Education & Experience</h3>
-                <div className="space-y-4">
-                  <div className="border-l-2 border-primary pl-4 py-1">
-                    <div className="text-sm text-muted-foreground">2020 - Present</div>
-                    <div className="font-medium">Freelance Developer</div>
-                    <div className="text-sm">Building web and mobile applications for clients worldwide</div>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4 py-1">
-                    <div className="text-sm text-muted-foreground">2016 - 2018</div>
-                    <div className="font-medium">Senior Developer at TechCorp</div>
-                    <div className="text-sm">Led development of various web applications</div>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4 py-1">
-                    <div className="text-sm text-muted-foreground">2014 - 2016</div>
-                    <div className="font-medium">BE in Computer Science</div>
-                    <div className="text-sm">University of Technology</div>
-                  </div>
-                </div>
+
+
+      
+      {/* Meet Our Developers Section */}
+<section className="section-padding bg-card">
+  <div className="container-custom">
+    <h2 className="text-3xl font-bold mb-10 text-center">Meet Our Developers</h2>
+
+    <div className="flex flex-col gap-12">
+
+      {/* Raj - Frontend Developer */}
+      <div className="bg-background p-6 rounded-lg shadow">
+        <p className="text-lg font-semibold text-primary mb-1">Frontend Developer</p>
+        <h3 className="text-2xl font-bold mb-4">Raj Chauhan</h3>
+        <div className="space-y-4">
+          {[
+            { name: "HTML & CSS", level: 95 },
+            { name: "Android", level: 95 },
+            { name: "JavaScript", level: 90 },
+            { name: "React Native", level: 85 },
+            { name: "React.js", level: 85 },
+            { name: "UI Design", level: 80 },
+          ].map((skill, index) => (
+            <div key={index}>
+              <div className="flex justify-between text-sm mb-1">
+                <span>{skill.name}</span>
+                <span>{skill.level}%</span>
+              </div>
+              <div className="w-full bg-muted h-2 rounded-full">
+                <div className="h-full bg-primary rounded-full" style={{ width: `${skill.level}%` }} />
               </div>
             </div>
-          </div>
+          ))}
         </div>
-      </section>
 
-      {/* Tools Section */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <h2 className="text-3xl font-bold mb-10 text-center">Tools & Technologies</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-            {tools.map((tool, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center p-4 rounded-lg hover:bg-card transition-colors"
-              >
-                <div className="w-16 h-16 mb-3 flex items-center justify-center">
-                  <img
-                    src={tool.icon}
-                    alt={tool.name}
-                    className="max-w-full max-h-full"
-                  />
-                </div>
-                <span className="font-medium">{tool.name}</span>
+        <h4 className="text-xl font-semibold mt-6 mb-2">Education & Experience</h4>
+        <ul className="space-y-2 text-sm">
+          <li><strong>2025–Present:</strong> Freelance Frontend Developer — Responsive websites</li>
+          <li><strong>2024–Present:</strong> React Native Developer at UB IT Solution</li>
+          <li><strong>2020–2024:</strong> BE in Computer Engineering</li>
+        </ul>
+      </div>
+
+      {/* Omkar - Backend Developer */}
+      <div className="bg-background p-6 rounded-lg shadow">
+        <p className="text-lg font-semibold text-primary mb-1">Backend Developer</p>
+        <h3 className="text-2xl font-bold mb-4">Omkar Kalvitkar</h3>
+        <div className="space-y-4">
+          {[
+            { name: "Kotlin", level: 90 },
+            { name: ".NET Core", level: 85 },
+            { name: "SQL Server", level: 85 },
+            { name: "Database Management", level: 85 },
+            { name: "API Design", level: 80 },
+          ].map((skill, index) => (
+            <div key={index}>
+              <div className="flex justify-between text-sm mb-1">
+                <span>{skill.name}</span>
+                <span>{skill.level}%</span>
               </div>
-            ))}
-          </div>
+              <div className="w-full bg-muted h-2 rounded-full">
+                <div className="h-full bg-primary rounded-full" style={{ width: `${skill.level}%` }} />
+              </div>
+            </div>
+          ))}
         </div>
-      </section>
 
+        <h4 className="text-xl font-semibold mt-6 mb-2">Education & Experience</h4>
+        <ul className="space-y-2 text-sm">
+          <li><strong>2025–Present:</strong> Freelance Backend Developer — Server-side apps</li>
+          <li><strong>2024:</strong> Software Developer at SmartIdentification</li>
+          <li><strong>2020–2024:</strong> BE in Computer Engineering</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+      
       {/* Approach Section */}
       <section className="section-padding bg-card">
         <div className="container-custom">
