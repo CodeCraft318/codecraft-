@@ -96,8 +96,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">API Development</h3>
                 <CardDescription>
-                  Robust and scalable backend APIs built with Node.js, GraphQL, and other modern technologies.
-                </CardDescription>
+                  Robust and scalable backend APIs built with ASP.NET Core, Entity Framework, and modern Microsoft technologies.                </CardDescription>
               </CardContent>
             </Card>
           </div>
