@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Download, Code, Globe, Rocket, Settings } from 'lucide-react';
+import AboutmeImg from '../assets/image/about.jpg';
 
 const About = () => {
   // Skills data
@@ -30,34 +30,37 @@ const About = () => {
     <div className="min-h-screen pt-20">
       {/* About Section */}
       <section className="section-padding">
-        <div className="container-custom">
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
-            <div className="flex-1">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-12 items-center justify-center">
+  
+            {/* Image */}
+            <div className="max-w-md w-full">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                  alt="Developer portrait"
-                  className="w-full h-full object-cover"
+                  src={AboutmeImg}
+                  alt="aboutme"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500 ease-in-out"
                 />
               </div>
             </div>
-            <div className="flex-1 space-y-6">
-              <h1 className="text-3xl md:text-4xl font-bold">
-                About Me
-              </h1>
-              <div className="space-y-4">
-                <p className="text-lg">
-                  We are <span className="font-semibold">CodeCraft</span>, a dedicated team of developers specializing in building high-quality mobile applications, robust backend systems, and modern web solutions.
+  
+            {/* Text Block (Fully Center-Aligned) */}
+            <div className="max-w-xl w-full space-y-6 text-center">
+              <h1 className="text-3xl md:text-4xl font-bold">About Us</h1>
+              <div className="space-y-4 text-lg text-muted-foreground">
+                <p>
+                  We are <span className="text-primary font-semibold">CodeCraft</span> — a passionate duo of developers committed to crafting exceptional digital experiences. From high-performance mobile apps to robust backend architectures and responsive web platforms, we bring ideas to life with precision and purpose.
                 </p>
                 <p>
-                  Our expertise lies in delivering scalable, user-centric applications using the latest technologies and industry best practices. We combine strong technical skills with thoughtful design to create seamless digital experiences.
+                  With deep expertise in the latest technologies and a strong eye for user-centric design, we deliver scalable, secure, and modern solutions that not only meet your goals — but exceed expectations.
                 </p>
                 <p>
-                  At CodeCraft, we are passionate about innovation, collaboration, and continuous improvement. We stay ahead of the curve to ensure the solutions we build are both future-ready and impactful.
+                  Innovation, collaboration, and continuous improvement are the pillars of our work. At CodeCraft, we don't just build products — we engineer impact.
                 </p>
               </div>
-
-              <div className="flex flex-wrap gap-3 pt-4">
+  
+              {/* Buttons centered below text */}
+              <div className="flex flex-wrap justify-center gap-3 pt-4">
                 <Button asChild>
                   <Link to="/contact">Get In Touch</Link>
                 </Button>
@@ -69,89 +72,118 @@ const About = () => {
                 </Button>
               </div>
             </div>
+  
           </div>
         </div>
       </section>
+    
+  
+  
+  
 
-
-
-      
-      {/* Meet Our Developers Section */}
+{/* Skills Section - Frontend Developer */}
 <section className="section-padding bg-card">
   <div className="container-custom">
-    <h2 className="text-3xl font-bold mb-10 text-center">Meet Our Developers</h2>
-
-    <div className="flex flex-col gap-12">
-
-      {/* Raj - Frontend Developer */}
-      <div className="bg-background p-6 rounded-lg shadow">
-        <p className="text-lg font-semibold text-primary mb-1">Frontend Developer</p>
-        <h3 className="text-2xl font-bold mb-4">Raj Chauhan</h3>
-        <div className="space-y-4">
-          {[
-            { name: "HTML & CSS", level: 95 },
-            { name: "Android", level: 95 },
-            { name: "JavaScript", level: 90 },
-            { name: "React Native", level: 85 },
-            { name: "React.js", level: 85 },
-            { name: "UI Design", level: 80 },
-          ].map((skill, index) => (
-            <div key={index}>
-              <div className="flex justify-between text-sm mb-1">
-                <span>{skill.name}</span>
-                <span>{skill.level}%</span>
-              </div>
-              <div className="w-full bg-muted h-2 rounded-full">
-                <div className="h-full bg-primary rounded-full" style={{ width: `${skill.level}%` }} />
-              </div>
+    <h2 className="text-3xl font-bold mb-2 text-center">Frontend Developer</h2>
+    <p className="text-center text-primary text-2xl font-semibold mb-10">Raj Chauhan</p>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="space-y-6">
+        {[
+          { name: "HTML & CSS", level: 95 },
+          { name: "Android", level: 95 },
+          { name: "JavaScript", level: 80 },
+          { name: "React Native", level: 90 },
+          { name: "UI Design", level: 80 },
+        ].map((skill, index) => (
+          <div key={index}>
+            <div className="flex justify-between mb-2">
+              <span className="font-medium">{skill.name}</span>
+              <span>{skill.level}%</span>
             </div>
-          ))}
-        </div>
-
-        <h4 className="text-xl font-semibold mt-6 mb-2">Education & Experience</h4>
-        <ul className="space-y-2 text-sm">
-          <li><strong>2025–Present:</strong> Freelance Frontend Developer — Responsive websites</li>
-          <li><strong>2024–Present:</strong> React Native Developer at UB IT Solution</li>
-          <li><strong>2020–2024:</strong> BE in Computer Engineering</li>
-        </ul>
-      </div>
-
-      {/* Omkar - Backend Developer */}
-      <div className="bg-background p-6 rounded-lg shadow">
-        <p className="text-lg font-semibold text-primary mb-1">Backend Developer</p>
-        <h3 className="text-2xl font-bold mb-4">Omkar Kalvitkar</h3>
-        <div className="space-y-4">
-          {[
-            { name: "Kotlin", level: 90 },
-            { name: ".NET Core", level: 85 },
-            { name: "SQL Server", level: 85 },
-            { name: "Database Management", level: 85 },
-            { name: "API Design", level: 80 },
-          ].map((skill, index) => (
-            <div key={index}>
-              <div className="flex justify-between text-sm mb-1">
-                <span>{skill.name}</span>
-                <span>{skill.level}%</span>
-              </div>
-              <div className="w-full bg-muted h-2 rounded-full">
-                <div className="h-full bg-primary rounded-full" style={{ width: `${skill.level}%` }} />
-              </div>
+            <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
+              <div
+                className="h-full bg-primary"
+                style={{ width: `${skill.level}%` }}
+              />
             </div>
-          ))}
-        </div>
-
-        <h4 className="text-xl font-semibold mt-6 mb-2">Education & Experience</h4>
-        <ul className="space-y-2 text-sm">
-          <li><strong>2025–Present:</strong> Freelance Backend Developer — Server-side apps</li>
-          <li><strong>2024:</strong> Software Developer at SmartIdentification</li>
-          <li><strong>2020–2024:</strong> BE in Computer Engineering</li>
-        </ul>
+          </div>
+        ))}
       </div>
-
+      <div>
+        <div className="bg-card rounded-lg p-6 shadow">
+          <h3 className="text-xl font-semibold mb-4">Education & Experience</h3>
+          <div className="space-y-4">
+            <div className="border-l-2 border-primary pl-4 py-1">
+              <div className="text-sm text-muted-foreground">2025 - Present</div>
+              <div className="font-medium">Freelance Frontend Developer</div>
+              <div className="text-sm">Responsive websites</div>
+            </div>
+            <div className="border-l-2 border-primary pl-4 py-1">
+              <div className="text-sm text-muted-foreground">2024 - Present</div>
+              <div className="font-medium">React Native Developer at UB IT Solution</div>
+            </div>
+            <div className="border-l-2 border-primary pl-4 py-1">
+              <div className="text-sm text-muted-foreground">2020 - 2024</div>
+              <div className="font-medium">BE in Computer Engineering</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+{/* Skills Section - Backend Developer */}
+<section className="section-padding bg-card">
+  <div className="container-custom">
+    <h2 className="text-3xl font-bold mb-2 text-center">Backend Developer</h2>
+    <p className="text-center text-primary text-2xl font-semibold mb-10">Omkar Kalvitkar</p>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="space-y-6">
+        {[
+          { name: "Kotlin", level: 90 },
+          { name: ".NET Core", level: 85 },
+          { name: "SQL Server", level: 85 },
+          { name: "Database Management", level: 85 },
+          { name: "API Design", level: 80 },
+        ].map((skill, index) => (
+          <div key={index}>
+            <div className="flex justify-between mb-2">
+              <span className="font-medium">{skill.name}</span>
+              <span>{skill.level}%</span>
+            </div>
+            <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
+              <div
+                className="h-full bg-primary"
+                style={{ width: `${skill.level}%` }}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+      <div>
+        <div className="bg-card rounded-lg p-6 shadow">
+          <h3 className="text-xl font-semibold mb-4">Education & Experience</h3>
+          <div className="space-y-4">
+            <div className="border-l-2 border-primary pl-4 py-1">
+              <div className="text-sm text-muted-foreground">2025 - Present</div>
+              <div className="font-medium">Freelance Backend Developer</div>
+              <div className="text-sm">Server-side applications</div>
+            </div>
+            <div className="border-l-2 border-primary pl-4 py-1">
+              <div className="text-sm text-muted-foreground">2024</div>
+              <div className="font-medium">Software Developer at SmartIdentification</div>
+            </div>
+            <div className="border-l-2 border-primary pl-4 py-1">
+              <div className="text-sm text-muted-foreground">2020 - 2024</div>
+              <div className="font-medium">BE in Computer Engineering</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -194,5 +226,6 @@ const About = () => {
     </div>
   );
 };
+
 
 export default About;
