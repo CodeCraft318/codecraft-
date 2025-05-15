@@ -103,7 +103,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Map Section
       <section className="h-64 md:h-96">
         <iframe
           title="Map"
@@ -113,7 +113,7 @@ const Contact = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </section>
+      </section> */}
     </div>
   );
 };
