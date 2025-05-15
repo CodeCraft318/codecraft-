@@ -10,56 +10,46 @@ const Services = () => {
       title: "Web Application Development",
       description: "Custom web applications built with React, Next.js, and other modern frameworks. Responsive designs, interactive UIs, and optimized performance.",
       icon: Globe,
-      pricing: "$3,000+"
+      pricing: "₹25,000+"
     },
     {
       title: "Mobile App Development",
       description: "Native Android applications using Kotlin. From concept to deployment, ensuring a seamless user experience across devices.",
       icon: Smartphone,
-      pricing: "$4,000+"
+      pricing: "₹35,000+"
     },
     {
       title: "API Development & Integration",
-      description: "RESTful and GraphQL APIs built with Node.js, Express, and more. Seamlessly connect your applications with third-party services.",
+      description: "RESTful and GraphQL APIs built with DotNet Core, MVC, and more. Seamlessly connect your applications with third-party services.",
       icon: Code,
-      pricing: "$2,000+"
+      pricing: "₹15,000+"
     },
     {
       title: "UI/UX Design",
       description: "User-centered design focusing on creating intuitive, accessible, and visually appealing interfaces that enhance user engagement.",
       icon: Palette,
-      pricing: "$1,500+"
+      pricing: "₹10,000+"
     },
     {
       title: "Database Design & Management",
-      description: "Efficient database architecture using MongoDB, PostgreSQL, Firebase, and more. Data modeling, optimization, and management.",
+      description: "Efficient database architecture using Microsoft SQL Server, Firebase, and more. Data modeling, optimization, and management.",
       icon: Database,
-      pricing: "$1,800+"
+      pricing: "₹20,000+"
     },
-    {
-      title: "Cloud Solutions",
-      description: "Deployment and management of applications on AWS, Google Cloud, or Azure. Scalable, secure, and cost-effective solutions.",
-      icon: Cloud,
-      pricing: "$2,500+"
-    },
+   
     {
       title: "Maintenance & Support",
       description: "Ongoing maintenance, updates, and technical support for existing applications. Keep your software running smoothly.",
       icon: Settings,
-      pricing: "$800+/month"
+      pricing: "₹4000+/month"
     },
-    {
-      title: "Performance Optimization",
-      description: "Identify and resolve performance bottlenecks in your applications. Improve load times, responsiveness, and user experience.",
-      icon: Rocket,
-      pricing: "$1,200+"
-    }
+    
   ];
   
   return (
     <div className="min-h-screen pt-20">
       {/* Services Header */}
-      <section className="bg-card py-16">
+      <section className="bg-card py-3">
         <div className="container-custom text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">My Services</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
