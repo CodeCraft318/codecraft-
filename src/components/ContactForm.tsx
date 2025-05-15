@@ -12,44 +12,58 @@ const ContactForm: React.FC = () => {
     email: '',
     message: ''
   });
-  
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
-  
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
+
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Show success message
-      toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out, I'll get back to you soon.",
-        variant: "default",
+      const response = await fetch('https://formspree.io/f/xanoazer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thanks for reaching out, I'll get back to you soon.",
+          variant: "default",
+        });
+
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        toast({
+          title: "Something went wrong",
+          description: "Your message couldn't be sent. Please try again.",
+          variant: "destructive",
+        });
+      }
     } catch (error) {
       toast({
-        title: "Something went wrong",
-        description: "Your message couldn't be sent. Please try again.",
+        title: "Network error",
+        description: "Unable to send message. Check your connection.",
         variant: "destructive",
       });
     } finally {
       setIsSubmitting(false);
     }
   };
-  
+
+
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
@@ -67,7 +81,7 @@ const ContactForm: React.FC = () => {
           placeholder="Your name"
         />
       </div>
-      
+
       <div>
         <label htmlFor="email" className="block text-sm font-medium mb-1">
           Email
@@ -83,7 +97,7 @@ const ContactForm: React.FC = () => {
           placeholder="your.email@example.com"
         />
       </div>
-      
+
       <div>
         <label htmlFor="message" className="block text-sm font-medium mb-1">
           Message
@@ -99,7 +113,7 @@ const ContactForm: React.FC = () => {
           placeholder="Tell me about your project..."
         />
       </div>
-      
+
       <Button type="submit" className="w-full" disabled={isSubmitting}>
         {isSubmitting ? (
           <>
