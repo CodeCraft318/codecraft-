@@ -1,6 +1,9 @@
 
 import React from 'react';
 import ProjectCard from '@/components/ProjectCard';
+import evcharg from '../assets/image/Evcharg.png';
+import foof from '../assets/image/food.png';
+import travel from '../assets/image/Travel.png';
 
 const Portfolio = () => {
   // Project data
@@ -8,7 +11,7 @@ const Portfolio = () => {
     {
       title: "E-commerce Platform",
       description: "A full-featured e-commerce platform with product management, shopping cart, and payment processing.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      image: evcharg,
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
@@ -16,7 +19,7 @@ const Portfolio = () => {
     {
       title: "Travel Booking App",
       description: "A mobile application for booking flights, hotels, and activities in one place.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      image: foof,
       technologies: ["Kotlin", "Firebase", "Google Maps API"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
@@ -24,7 +27,7 @@ const Portfolio = () => {
     {
       title: "Health & Fitness Tracker",
       description: "A comprehensive fitness tracking application with workout plans, nutrition tracking, and progress analytics.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+      image : travel,
       technologies: ["React Native", "GraphQL", "AWS"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"

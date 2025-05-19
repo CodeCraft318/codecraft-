@@ -23,13 +23,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Card className="overflow-hidden card-hover h-full flex flex-col">
-      <div className="aspect-video overflow-hidden bg-muted">
-        <img 
-          src={image} 
-          alt={title} 
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-        />
-      </div>
+      <div className="h-52 w-full bg-muted flex items-center justify-center overflow-hidden">
+  <img
+    src={image}
+    alt={title}
+    className="max-h-full object-contain"
+  />
+</div>
+
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
