@@ -24,12 +24,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <Card className="overflow-hidden card-hover h-full flex flex-col">
       <div className="h-52 w-full bg-muted flex items-center justify-center overflow-hidden">
-  <img
-    src={image}
-    alt={title}
-    className="max-h-full object-contain"
-  />
-</div>
+        <img
+          src={image}
+          alt={title}
+          className="max-h-full object-contain"
+        />
+      </div>
 
       <CardHeader>
         <CardTitle>{title}</CardTitle>
@@ -38,8 +38,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <CardDescription className="text-base">{description}</CardDescription>
         <div className="flex flex-wrap gap-2 mt-4">
           {technologies.map((tech, index) => (
-            <span 
-              key={index} 
+            <span
+              key={index}
               className="px-2 py-1 text-xs rounded-full bg-primary/10 text-primary"
             >
               {tech}
@@ -56,14 +56,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </a>
           </Button>
         )}
-        {liveUrl && (
+        {/* {liveUrl && (
           <Button asChild size="sm" className="flex-1">
             <a href={liveUrl} target="_blank" rel="noopener noreferrer">
               <Globe size={16} className="mr-2" />
               Live Demo
             </a>
           </Button>
-        )}
+        )} */}
       </CardFooter>
     </Card>
   );

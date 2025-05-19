@@ -4,60 +4,57 @@ import ProjectCard from '@/components/ProjectCard';
 import evcharg from '../assets/image/Evcharg.png';
 import foof from '../assets/image/food.png';
 import travel from '../assets/image/Travel.png';
+import travelCompanion from '../assets/image/travel.jpeg';
 
+import gemini from '../assets/image/gemini.jpeg';
+import littleLemon from '../assets/image/littleLemon.jpeg';
 const Portfolio = () => {
   // Project data
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A full-featured e-commerce platform with product management, shopping cart, and payment processing.",
+      title: "EV Charging Station Finder App",
+      description: "The EV Charging Station Finder App is designed to be the ultimate solution for locating nearby EV charging stations effortlessly.",
       image: evcharg,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "https://github.com",
+      technologies: ["React", "Google Maps API",],
+      githubUrl: "https://github.com/OmkarKalvitkar/EV-Charging-Station-Finder-App",
       liveUrl: "https://example.com"
     },
     {
-      title: "Travel Booking App",
-      description: "A mobile application for booking flights, hotels, and activities in one place.",
-      image: foof,
+      title: "TravelCompanion App",
+      description: "TravelCompanion is a mobile application built using Jetpack Compose. It integrates Firebase Authentication for secure user management and allows users to select travel destinations using Google Maps.",
+      image: travelCompanion,
       technologies: ["Kotlin", "Firebase", "Google Maps API"],
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/NoobCoderraj/TravelCompanion",
       liveUrl: "https://example.com"
     },
     {
       title: "Health & Fitness Tracker",
       description: "A comprehensive fitness tracking application with workout plans, nutrition tracking, and progress analytics.",
-      image : travel,
-      technologies: ["React Native", "GraphQL", "AWS"],
+      image: travel,
+      technologies: ["React Native"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
     },
     {
-      title: "Real Estate Listing Platform",
-      description: "A property listing website with advanced search, virtual tours, and agent contact features.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      technologies: ["Next.js", "Tailwind CSS", "Postgres", "MapBox"],
-      githubUrl: "https://github.com",
+      title: "Google Gemini Clone",
+      description: "This project replicates the UI and functionality of the real Google Gemini search interface using React JS.",
+      image: gemini,
+      technologies: ["React Native"],
+      githubUrl: "https://github.com/NoobCoderraj/Google-Gemini",
       liveUrl: "https://example.com"
     },
+
     {
-      title: "Task Management System",
-      description: "A collaboration tool for teams with task assignment, progress tracking, and deadline management.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
-      technologies: ["React", "Redux", "Express", "MongoDB"],
-      githubUrl: "https://github.com",
+      title: "Little Lemon",
+      description: "This app is developed using React Native and Firebase Authentication, providing a seamless experience for ordering a variety of delicious Indian foods.",
+      image: littleLemon,
+      technologies: ["React Native"],
+      githubUrl: "https://github.com/NoobCoderraj/LittleLemon",
       liveUrl: "https://example.com"
     },
-    {
-      title: "Educational Platform",
-      description: "An online learning platform with course management, video lectures, and progress tracking.",
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      technologies: ["Vue.js", "Firebase", "Cloudinary"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
-    }
+
   ];
-  
+
   return (
     <div className="min-h-screen pt-20">
       {/* Portfolio Header */}
@@ -69,7 +66,7 @@ const Portfolio = () => {
           </p>
         </div>
       </section>
-      
+
       {/* Portfolio Grid */}
       <section className="section-padding">
         <div className="container-custom">
@@ -88,9 +85,9 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Technologies Section */}
-      <section className="section-padding bg-card">
+      {/* <section className="section-padding bg-card">
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold mb-6">Technologies I Work With</h2>
           <div className="flex flex-wrap justify-center gap-6">
@@ -108,7 +105,7 @@ const Portfolio = () => {
             <div className="bg-background px-4 py-3 rounded-full shadow-sm">Tailwind CSS</div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
