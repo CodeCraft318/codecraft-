@@ -15,6 +15,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  base: "/codecraft-/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
