@@ -1,9 +1,9 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
+
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
@@ -14,7 +14,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Index from "./pages/Index";
 
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -22,7 +21,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <HashRouter >
+      <HashRouter>
         <Navbar />
         <main>
           <Routes>
@@ -36,7 +35,7 @@ const App = () => (
           </Routes>
         </main>
         <Footer />
-      </HashRouter >
+      </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
