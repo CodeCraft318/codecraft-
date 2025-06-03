@@ -30,7 +30,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
+    // { name: "Services", path: "/services" },
     { name: "Portfolio", path: "/portfolio" },
     // { name: "Testimonials", path: "/testimonials" },
     { name: "Contact", path: "/contact" },
@@ -58,8 +58,8 @@ const Navbar = () => {
               key={link.name}
               to={link.path}
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === link.path
-                  ? 'text-primary font-semibold'
-                  : 'text-muted-foreground hover:text-foreground hover:bg-accent/10'
+                ? 'text-primary font-semibold'
+                : 'text-muted-foreground hover:text-foreground hover:bg-accent/10'
                 }`}
             >
               {link.name}
@@ -92,8 +92,8 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 className={`px-4 py-3 rounded-lg text-lg font-medium ${location.pathname === link.path
-                    ? 'bg-primary/10 text-primary font-semibold'
-                    : 'text-foreground hover:bg-accent/10'
+                  ? 'bg-primary/10 text-primary font-semibold'
+                  : 'text-foreground hover:bg-accent/10'
                   }`}
               >
                 {link.name}
