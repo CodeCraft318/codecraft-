@@ -1,18 +1,17 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import TechStack from '@/components/TechStack';
 import { Code, ArrowRight, Globe, Settings, Rocket } from 'lucide-react';
 import { Card, CardDescription, CardContent } from '@/components/ui/card';
-import profileImg from '../assets/image/homeImg.jpg'; // adjust path based on your file
+import profileImg from '../assets/image/homeImg.jpg';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center pt-16 code-bg">
-        <div className="container-custom flex flex-col md:flex-row items-center gap-12 animate-fade-in">
+<div className="container-custom flex flex-col sm:flex-row items-center gap-12 animate-fade-in">
           <div className="flex-1 space-y-6">
             <span className="px-3 py-1 rounded-full bg-primary/10 text-primary inline-block text-sm font-medium">
               Full-Stack Developer
@@ -96,7 +95,8 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">API Development</h3>
                 <CardDescription>
-                  Robust and scalable backend APIs built with ASP.NET Core, Entity Framework, and modern Microsoft technologies.                </CardDescription>
+                  Robust and scalable backend APIs built with ASP.NET Core, Entity Framework, and modern Microsoft technologies.                
+                  </CardDescription>
               </CardContent>
             </Card>
           </div>
