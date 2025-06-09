@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Youtube, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -17,7 +16,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://github.com"
+                href="https://github.com/CodeCraft318"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-accent/10 transition-colors"
@@ -35,13 +34,22 @@ const Footer: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://www.youtube.com/channel/UCg4wx4e5JbbE1bgO7IhZ34A" // Replace with your actual YouTube handle
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-accent/10 transition-colors"
-                aria-label="Twitter"
+                aria-label="YouTube"
               >
-                <Twitter size={20} />
+                <Youtube size={20} />
+              </a>
+              <a
+                href="https://www.instagram.com/code.craft318/?next=%2F" // Replace with your actual Instagram
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-accent/10 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
               </a>
             </div>
           </div>

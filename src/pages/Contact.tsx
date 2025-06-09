@@ -60,7 +60,7 @@ const Contact = () => {
                       className="p-0 h-auto mt-1 text-primary"
                       asChild
                     >
-                      <a href="https://wa.me/15551234567">
+                      <a href="https://wa.me/8424955003">
                         WhatsApp me <Send size={14} className="ml-1" />
                       </a>
                     </Button>
