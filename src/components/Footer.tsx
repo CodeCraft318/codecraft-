@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Github, Linkedin, Youtube, Instagram } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Github, Linkedin, Youtube, Instagram } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -12,7 +12,8 @@ const Footer: React.FC = () => {
               <span className="text-gradient">CodeCraft</span> Portfolio
             </Link>
             <p className="text-muted-foreground mb-4 max-w-xs">
-              Building digital experiences that solve real problems for businesses and users alike.
+              Building digital experiences that solve real problems for
+              businesses and users alike.
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -25,7 +26,7 @@ const Footer: React.FC = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/codecraft-developers-38807936b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-accent/10 transition-colors"
@@ -34,7 +35,7 @@ const Footer: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://www.youtube.com/channel/UCg4wx4e5JbbE1bgO7IhZ34A" // Replace with your actual YouTube handle
+                href="https://www.youtube.com/channel/UCg4wx4e5JbbE1bgO7IhZ34A"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-accent/10 transition-colors"
@@ -43,7 +44,7 @@ const Footer: React.FC = () => {
                 <Youtube size={20} />
               </a>
               <a
-                href="https://www.instagram.com/code.craft318/?next=%2F" // Replace with your actual Instagram
+                href="https://www.instagram.com/code.craft318/?next=%2F"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-accent/10 transition-colors"
@@ -57,19 +58,34 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <div className="flex flex-col gap-2">
-              <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                to="/"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Home
               </Link>
-              <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                to="/about"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 About
               </Link>
-              <Link to="/services" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                to="/services"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Services
               </Link>
-              <Link to="/portfolio" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                to="/portfolio"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Portfolio
               </Link>
-              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link
+                to="/contact"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 Contact
               </Link>
             </div>
@@ -78,21 +94,18 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Get In Touch</h3>
             <div className="flex flex-col gap-2">
-              <p className="text-muted-foreground">
-                codecraft318@gmail.com
-              </p>
-              <p className="text-muted-foreground">
-                +91 8424955003
-              </p>
-              <p className="text-muted-foreground">
-                Mumbai, Kalyan(East)
-              </p>
+              <p className="text-muted-foreground">codecraft318@gmail.com</p>
+              <p className="text-muted-foreground">+91 8424955003</p>
+              <p className="text-muted-foreground">Mumbai, Kalyan(East)</p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-border mt-10 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Dev Portfolio. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Dev Portfolio. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>

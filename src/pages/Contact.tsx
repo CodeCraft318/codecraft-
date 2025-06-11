@@ -1,8 +1,7 @@
-
-import React from 'react';
-import ContactForm from '@/components/ContactForm';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import React from "react";
+import ContactForm from "@/components/ContactForm";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
@@ -12,7 +11,8 @@ const Contact = () => {
         <div className="container-custom text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or just want to say hello? I'd love to hear from you!
+            Have a project in mind or just want to say hello? I'd love to hear
+            from you!
           </p>
         </div>
       </section>
@@ -35,7 +35,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium mb-1">Email</h3>
-                    <p className="text-muted-foreground">codecraft318@gmail.com</p>
+                    <p className="text-muted-foreground">
+                      codecraft318@gmail.com
+                    </p>
                     <Button
                       variant="link"
                       className="p-0 h-auto mt-1 text-primary"
@@ -73,7 +75,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium mb-1">Location</h3>
-                    <p className="text-muted-foreground">Mumbai, Kalyan(East)</p>
+                    <p className="text-muted-foreground">
+                      Mumbai, Kalyan(East)
+                    </p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Available for remote work worldwide
                     </p>
@@ -85,8 +89,10 @@ const Contact = () => {
                 <h3 className="text-lg font-medium mb-4">Business Hours</h3>
                 <div className="space-y-2">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Monday - Friday</span>
-                    <span>9:00 AM - 6:00 PM PST</span>
+                    <span className="text-muted-foreground">
+                      Monday - Friday
+                    </span>
+                    <span>9:00 AM - 6:00 PM </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Saturday</span>
